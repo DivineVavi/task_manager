@@ -1,0 +1,339 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Форма создания департамента */
+  .create-department {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .create-department input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .create-department button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .create-department button:hover {
+    background-color: #218838;
+  }
+  
+  /* Список департаментов */
+  .department-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .department-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .department-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .department-list li input {
+    flex: 1;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .department-list li button {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .department-list li button.edit {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  .department-list li button.edit:hover {
+    background-color: #e0a800;
+  }
+  
+  .department-list li button.delete {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .department-list li button.delete:hover {
+    background-color: #c82333;
+  }
+  
+  .department-list li button.save {
+    background-color: #17a2b8;
+    color: #fff;
+  }
+  
+  .department-list li button.save:hover {
+    background-color: #138496;
+  }
+  
+  .department-list li button.cancel {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  
+  .department-list li button.cancel:hover {
+    background-color: #5a6268;
+  }
+
+  /* Форма создания роли */
+.create-role {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.create-role input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.create-role button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-role button:hover {
+  background-color: #218838;
+}
+
+/* Список ролей */
+.role-list {
+  list-style: none;
+  padding: 0;
+}
+
+.role-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.role-list li:last-child {
+  border-bottom: none;
+}
+
+.role-list li input {
+  flex: 1;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.role-list li button {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.role-list li button.edit {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.role-list li button.edit:hover {
+  background-color: #e0a800;
+}
+
+.role-list li button.delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.role-list li button.delete:hover {
+  background-color: #c82333;
+}
+
+.role-list li button.save {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.role-list li button.save:hover {
+  background-color: #138496;
+}
+
+.role-list li button.cancel {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.role-list li button.cancel:hover {
+  background-color: #5a6268;
+}
+
+/* Форма создания области */
+.create-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.create-area input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.create-area input[type="number"] {
+  flex: 0.5;
+}
+
+.create-area button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-area button:hover {
+  background-color: #218838;
+}
+
+/* Список областей */
+.area-list {
+  list-style: none;
+  padding: 0;
+}
+
+.area-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.area-list li:last-child {
+  border-bottom: none;
+}
+
+.area-list li input {
+  flex: 1;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.area-list li input[type="number"] {
+  flex: 0.5;
+}
+
+.area-list li button {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.area-list li button.edit {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.area-list li button.edit:hover {
+  background-color: #e0a800;
+}
+
+.area-list li button.delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.area-list li button.delete:hover {
+  background-color: #c82333;
+}
+
+.area-list li button.save {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.area-list li button.save:hover {
+  background-color: #138496;
+}
+
+.area-list li button.cancel {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.area-list li button.cancel:hover {
+  background-color: #5a6268;
+}
+
+/* src/css/index.css или src/css/menu.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+

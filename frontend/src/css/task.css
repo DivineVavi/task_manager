@@ -1,0 +1,112 @@
+/* Task.css */
+
+.task {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .task:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+  }
+  
+  .task p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .task__delete {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .task__delete:hover {
+    background-color: #dc2626;
+  }
+  
+  .button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #2563eb;
+  }
+  
+  .button__left,
+  .button__right {
+    position: absolute;
+    bottom: 8px;
+  }
+  
+  .button__left {
+    left: 8px;
+  }
+  
+  .button__right {
+    right: 8px;
+  }
+  
+  /* Стили для мобильных устройств */
+  .btn_mobile {
+    display: none; /* По умолчанию скрываем кнопки для мобильных устройств */
+  }
+  
+  /* Медиа-запрос для мобильных устройств */
+  @media (max-width: 768px) {
+    .btn_desktop {
+      display: none; /* Скрываем кнопки для десктопа на мобильных устройствах */
+    }
+  
+    .btn_mobile {
+      display: flex; /* Показываем кнопки для мобильных устройств */
+    }
+  
+    .button__left,
+    .button__right {
+      bottom: 4px;
+    }
+  
+    .button__left {
+      left: 4px;
+    }
+  
+    .button__right {
+      right: 4px;
+    }
+  }

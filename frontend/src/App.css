@@ -1,0 +1,214 @@
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+.kanban {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 30px;
+  background-color: #EEF2F9;
+  border: 4px solid #E4E8F0;
+  border-radius: 5px;
+}
+
+/* COLUMNS */
+
+.column {
+  padding: 10px;
+  min-width: 260px;
+  min-height: 600px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 4px solid #E4E8F0;
+  background-color:  #F6F8FC;
+  width: 25%;
+  justify-content: stretch;
+}
+
+.col_1 {
+  border-top: 4px solid #D671AE;
+}
+.col_2 {
+  border-top: 4px solid #ffbd0a;
+}
+.col_3 {
+  border-top: 4px solid #8FABFB;
+}
+.col_4 {
+  border-top: 4px solid #6ddba6;
+}
+
+.column__container {
+  display: flex;
+  justify-content: stretch;
+  
+}
+
+.menu {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.menu button {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.home-container {
+  padding: 20px;
+}
+
+.calendar-wrapper {
+  margin-top: 20px;
+}
+
+/* -------------------- media max 1230px --------------------  */
+ @media (max-width: 1230px) { 
+  
+  #root {
+    width: 1230px
+  }
+  
+  .column {
+    padding: 10px;
+    min-width: 180px;
+    min-height: 600px;
+    margin: 5px;
+    margin-right: 10px;
+  }
+
+  .task {
+    padding: 10px;
+    min-width: 20%;
+    margin-top: 15px;
+
+  }
+
+  .column__container {
+    display: flex;
+
+  }
+
+  .task__delete {
+    margin-left: 160px;
+  }
+} 
+
+/* -------------------- media max 990px --------------------  */
+@media (max-width: 990px) {
+ 
+  .column {
+    padding: 10px;
+    min-height: 600px;
+    margin: 5px;
+    margin-right: 10px;
+    width: 40%;
+  }
+
+  .task {
+    padding: 10px;
+    margin-top: 15px;
+  }
+
+  .column__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .kanban { 
+    max-width: 990px;
+  }
+
+  .task__delete {
+    margin-left: 200px;
+  }
+}
+
+/* -------------------- media max 620px --------------------  */
+@media (max-width: 620px) {
+  
+  .column {
+    padding: 10px;
+    min-width: 90%;
+    min-height: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;;
+  }
+
+  .task {
+    padding: 10px;
+    min-width: 120px;
+    margin-top: 15px;
+  }
+
+  .column__container {
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .kanban { 
+    max-width: 300px;
+    background-color: #C2CAF0;
+    border: none;
+  }
+
+  .task__delete {
+    margin-left: 180px;
+  }
+
+  h1 {
+    color: #765cb6;
+  }
+
+  .btn_mobile {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 2px 8px 2px 8px;;;
+  }
+
+  .btn_desktop {
+    display: none;
+  }
+
+}
+
+.menu span {
+  color: #4caf50;
+  font-weight: bold;
+  margin-right: 15px;
+  position: absolute;
+  top: 15px;
+}
